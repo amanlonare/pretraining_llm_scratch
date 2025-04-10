@@ -18,6 +18,20 @@ This project explores different techniques for pretraining and modifying LLMs, w
   - Filters non-English texts using FastText
 - Saves processed dataset in Parquet format
 
+### 2. Data Packaging (`data_packaging.ipynb`)
+- Loads cleaned dataset from Parquet file
+- Implements data packaging steps:
+  - Shards dataset into manageable pieces (10 shards)
+  - Tokenizes text using OPT-125m tokenizer
+  - Adds special tokens (BOS, EOS)
+  - Packs tokens into fixed sequence length (32 tokens)
+  - Tracks token counts for monitoring
+- Creates final packaged dataset with:
+  - ~4.6M total tokens
+  - 144,505 training examples
+  - 32 tokens per sequence
+- Saves packaged dataset in Parquet format
+
 ### 2. Model Architecture (`modelling.ipynb`)
 Explores four different approaches to model initialization:
 - Random weight initialization
