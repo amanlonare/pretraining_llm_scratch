@@ -1,0 +1,5 @@
+notebooks/code
+notebooks/data
+notebooks/models
+venv/
+.env
