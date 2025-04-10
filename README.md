@@ -32,7 +32,7 @@ This project explores different techniques for pretraining and modifying LLMs, w
   - 32 tokens per sequence
 - Saves packaged dataset in Parquet format
 
-### 2. Model Architecture (`modelling.ipynb`)
+### 3. Model Architecture (`modelling.ipynb`)
 Explores four different approaches to model initialization:
 - Random weight initialization
 - Using existing pretrained models
@@ -45,7 +45,7 @@ Uses the facebook/opt-125m model as the base architecture with configurations:
 - Attention heads: 12
 - Vocabulary size: 50272
 
-### 3. Training (`training.ipynb`)
+### 4. Training (`training.ipynb`)
 Implements training pipeline using Hugging Face's Trainer with:
 - Custom dataset loading
 - Training arguments configuration
